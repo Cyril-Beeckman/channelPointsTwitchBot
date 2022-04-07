@@ -1,0 +1,14 @@
+{
+	"type": "module",
+	"main": "app.js",
+	"scripts": {
+		"dev": "nodenv ."
+	},
+	"dependencies": {
+		"axios": "^0.26.0",
+		"express": "^4.17.3",
+		"firebase-admin": "^10.0.2",
+		"node-env-run": "^4.0.2",
+		"tmi.js": "^1.8.5"
+	}
+}

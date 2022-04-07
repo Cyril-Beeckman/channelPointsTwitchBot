@@ -1,0 +1,14 @@
+{
+  "credentials": {
+    "spotify": {
+      "clientId": "YOUR SPOTIFY CLIENT ID",
+      "clientSecret": "YOUR SPOTIFY CLIENT SECRET",
+      "refreshToken": "YOUR SPOTIFY REFRESH TOKEN, You can get it at /gettingstarted"
+    },
+    "twitch": {
+      "clientId": "YOUR TWITCH CLIENT ID",
+      "clientSecret": "YOUR TWITCH CLIENT SECRET",
+      "refreshToken": "YOUR TWITCH REFRESH TOKEN, You can get it at /gettingstarted"
+    }
+  }
+}
