@@ -32,6 +32,8 @@ app.use(async (req, res, next) => {
     next()
 })
 
+app.enable('trust proxy')
+
 app.get('/', (req, res) => {
     db.ref('/last_events').once('value', (snapshot) => {
         let dataToSend = {}
@@ -148,7 +150,7 @@ app.get('/callback', (req, res) => {
                 password: credentials.spotify.clientSecret
             }
         }).then(response => {
-            db.ref(`/credentials/twitch/refreshToken`).set(response.data.refresh_token)
+            db.ref(`/credentials/spotify/refreshToken`).set(response.data.refresh_token)
             res.sendFile(path.join(path.resolve(), '/success.html'));
         }).catch(error => console.log(error))
     }
